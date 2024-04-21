@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Connects to server 54.86.18.208  with key in ~/.ssh/school
+# Generating SSH key-pairs according to Task requirements
 
-ssh -i ~/.ssh/school ubuntu@54.86.18.208
+ssh-keygen -t rsa -b 4096 -P betty -f school
