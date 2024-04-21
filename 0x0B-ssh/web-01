@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Connects to server 54.196.38.159 with key in ~/.ssh/school
+#sever-01 login
+
+eval $("ssh-agent")
+
+ssh-add ~/.ssh/school
+
+
+ssh ubuntu@54.196.38.159
