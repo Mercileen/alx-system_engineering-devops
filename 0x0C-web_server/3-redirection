@@ -31,7 +31,8 @@ echo -e "Hello World!" > /var/www/html/index.nginx-debian.html
 string_for_replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/Mercileen permanent;"
 sudo sed -i "s/server_name _;/$string_for_replacement/" /etc/nginx/sites-enabled/default
 
-# Restarting nginx
+
+Restarting nginx
 sudo service nginx restart
 
 echo -e "\nCompleted.\n"
